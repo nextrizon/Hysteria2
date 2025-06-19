@@ -11,20 +11,26 @@ This guide should also work for GL-iNet MT2500/MT6000 and any OpenWrt router usi
 
 ### Prerequisites
 ___
-1. Update to the latest stable firmware for your OpenWrt router. The GL-iNet version of the OpenWrt still stuck version 21 as of writing this guide.
-2. Make to install LUCI interface in the Advance Setting of the GL-iNet Admin webpage for your router.
+1. Update to the latest firmware for your OpenWrt router. The GL-iNet version of the OpenWrt still stuck version 21 as of writing this guide.
+2. Make sure to install LUCI interface in the **Advanced Settings** of the GL-iNet Admin webpage for GL-iNet router or use the `opkg` command after ssh into the router.
 
 ### Installation
 ___
-1. Ssh into your router at 192.168.8.1 with **Putty** for Windows or the built in ssh client in Windows Command Prompt/MacOS Terminal.
+1. Ssh into your router at 192.168.8.1 as _root_ user with **PuTTY** for Windows or using the built in ssh client in Windows Command Prompt/MacOS Terminal.
 2. Run update for OpenWrt packages.
 
 ```bash
 opkg update
 ```
+> [!NOTE]
+>If you haven't install LUCI from the Admin webpage, use the following command to install it.
+```bash
+opkg install luci-app-opkg
+```
 
-3. Run the following command to download the script to update the OpenWrt's LUCI web interface with the custom istore interface.
+3. Run the following command to download and execute a script to update the OpenWrt's LUCI web interface with the custom iStoreOS interface.
 
 ```bash
 wget -O gl-inet.sh https://cafe.cpolar.top/wkdaily/gl-inet-onescript/raw/branch/master/gl-inet.sh && chmod +x gl-inet.sh && ./gl-inet.sh
 ```
+4. You should see the following Chinese text menu. Go ahead and 
