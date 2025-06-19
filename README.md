@@ -52,7 +52,7 @@ Step 5. Login into the newly installed LuCI iStoreOS theme from the **Advanced S
 
 Step 6. Manual install Passwall2 plug-in in the iStore app page. Download the latest Passwall2 plug-in from [this GitHub page](https://github.com/AUK9527/Are-u-ok/tree/main/apps)
 > [!NOTE]
->There are 5 different iStore plug-ins available for router using ARM Cortex-A53 processor. Download the one for **Passwall2** as I could get Hysteria2 working with OpenClash and I didn't bother with the other plug-ins once I got Passwall2 working.
+>There are 5 different iStore plug-ins available for router using ARM Cortex-A53 processor. Download the one for **Passwall2** as I couldn't get Hysteria2 working with OpenClash and I didn't bother with the other plug-ins once I got Passwall2 working.
 As writing of this guide I downloaded this **PassWall2_25.5.7_aarch64_a53_all_sdk_22.03.7.run** plug-in file.
 
 ![istore plugin](https://github.com/nextrizon/Hysteria2/blob/main/istore.png)
