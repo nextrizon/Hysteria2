@@ -7,12 +7,12 @@ ___
 >[!IMPORTANT]
 > I'm not responsible if this guide break your router. If it does happen, you can try using [this guide](https://docs.gl-inet.com/router/en/3/tutorials/debrick/) to restore the firmware for your GL-iNet router.
 
-This guide should also work for GL-iNet MT2500/MT6000 and any OpenWrt router using an ARM Cortex-A53 processor with at least 256MB of flash storage.
+This guide should also work for GL-iNet MT2500A/MT6000 and any OpenWrt router using an ARM Cortex-A53 processor with at least 256MB of flash storage.
 
 ### Prerequisites
 ___
 1. Update to the latest firmware for your OpenWrt router. The GL-iNet version of the OpenWrt still stuck version 21 as of writing this guide.
-2. Make sure to install LUCI interface in the **Advanced Settings** of the GL-iNet Admin webpage for GL-iNet router or use the `opkg` command after ssh into the router.
+2. Make sure to install LUCI interface in the **Advanced Settings** of the GL-iNet Admin webpage for GL-iNet router or use the `opkg` command after ssh into the router and doing `opkg update` command.
 
 ### Installation
 ___
@@ -28,9 +28,18 @@ opkg update
 opkg install luci-app-opkg
 ```
 
-3. Run the following command to download and execute a script to update the OpenWrt's LUCI web interface with the custom iStoreOS interface.
+3. Run the following command to download and execute a script to update the OpenWrt's LUCI web interface with the custom iStoreOS theme.
 
 ```bash
 wget -O gl-inet.sh https://cafe.cpolar.top/wkdaily/gl-inet-onescript/raw/branch/master/gl-inet.sh && chmod +x gl-inet.sh && ./gl-inet.sh
 ```
-4. You should see the following Chinese text menu. Go ahead and 
+4. You should see the following Chinese text install menu. Go ahead and press **1** and then **ENTER** for  `GL.iNet GL-MT3000一键iStoreOS风格化`
+   ![install script](https://github.com/nextrizon/Hysteria2/blob/main/gl-inet.png)
+
+> [!NOTE]
+>This will take couple of minutes for the script to install the iStoreOS theme.
+![finish install](https://github.com/nextrizon/Hysteria2/blob/main/install-complete.png)
+
+Press **ENTER** when see above and the **q** at the main install menu as you don't need to install any other module.
+
+
