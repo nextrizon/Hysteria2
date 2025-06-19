@@ -76,7 +76,7 @@ Step 11. Using the above menu screen, select the gear icon **服务** for **Serv
 
 ![Hysteria2 setup](https://github.com/nextrizon/Hysteria2/blob/main/Hy2node.png)
 
-Step 12. Using the above menu screen, I will update the Hysteria2 node configuration using the settings from the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) for the server install.
+Step 12. Using the above menu screen to create a Hysteria2 node using the settings from the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) for the Hysteria2 server install.
 > [!NOTE]
 >The easiest way to do it is to **Export Share Link To Clipboard** from the **[Furious](https://github.com/LorenEteval/Furious/releases) client in the **Edit Configuration** menu and then import config by selecting the **导入分享URL**/**Importing Share URL** in Passwall2 node list page, if you did a test connection using the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/).
 
