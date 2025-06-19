@@ -18,6 +18,13 @@ ___
 ___
 1. Ssh into your router at 192.168.8.1 with **Putty** for Windows or the built in ssh client in Windows Command Prompt/MacOS Terminal.
 2. Run update for OpenWrt packages.
-```opkg update```
+
+```bash
+opkg update
+```
+
 3. Run the following command to download the script to update the OpenWrt's LUCI web interface with the custom istore interface.
-`wget -O gl-inet.sh https://cafe.cpolar.top/wkdaily/gl-inet-onescript/raw/branch/master/gl-inet.sh && chmod +x gl-inet.sh && ./gl-inet.sh`
+
+```bash
+wget -O gl-inet.sh https://cafe.cpolar.top/wkdaily/gl-inet-onescript/raw/branch/master/gl-inet.sh && chmod +x gl-inet.sh && ./gl-inet.sh
+```
