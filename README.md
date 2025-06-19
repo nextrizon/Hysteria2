@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c4acd789-afb8-4cab-9d1e-f5642aa258bd)## Setting up a Hysteria2 client node on GL-iNet GL-MT3000(Beryl AX) router
+## Setting up a Hysteria2 client node on GL-iNet GL-MT3000(Beryl AX) router
 ___
 
 >[!NOTE]
