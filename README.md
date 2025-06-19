@@ -5,7 +5,7 @@ ___
 >You can use the [following guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) on setting up a Hysteria2 server and/or client on a Windows PC
 
 >[!IMPORTANT]
-> I'm not responsible if this guide break your router. If it does happen, you can try using [this guide](https://docs.gl-inet.com/router/en/3/tutorials/debrick/) to restore the firmware for your GL-iNet router.
+> I'm not responsible if this guide brick your router. If it does happen, you can try using [this guide](https://docs.gl-inet.com/router/en/3/tutorials/debrick/) to restore the firmware for your GL-iNet router.
 
 This guide should also work for GL-iNet MT2500A/MT6000 and any OpenWrt router using an ARM Cortex-A53 processor with at least 256MB of flash storage.
 
@@ -76,7 +76,7 @@ Step 11. Using the above screenshot, select the gear icon **服务** for **Servi
 
 Step 12. Using the above screenshot, I will update the Hysteria2 node configuration using the settings from the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) for the server install.
 > [!NOTE]
->The easiest way to do it is to **Export Share Link To Clipboard** from the **[Forious](https://github.com/LorenEteval/Furious/releases) Edit Configuration** menu and then import it by selecting the **导入分享URL**/**Importing Share URL**, if you tested your Hysteria2 server using the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/).
+>The easiest way to do it is to **Export Share Link To Clipboard** from the **[Furious](https://github.com/LorenEteval/Furious/releases) client in the **Edit Configuration** menu and then import config by selecting the **导入分享URL**/**Importing Share URL** in Passwall2 node list page, if you did a test connection using the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/).
 
 Enter for the following boxes:
 
@@ -95,26 +95,26 @@ Enter for the following boxes:
 |PinSHA256|PinSHA256|Leave it blank, I think it's use when the server isn't using secure ceftificate|
 |最大上行(Mbps)|Maximum Uplink(Mbps)|Leave it blank, unless you want to limite the uplink speed|
 |最大下行(Mbps)|Maximum Downlink(Mbps)|Again blank, unless otherwise|
-|**Just leave the rest of the boxes blank|||
+### Just leave the rest of the boxes blank
 
 Select blue **保存并应用** button on the bottom of the page to **Save and Apply** the settings that were entered
 
-Step 13. You see the newly created Hysteria2 node list under the existing **Xray 分流** node. Click on the **测试** to the Hysteria2 node to do **Test** ping to the server.
+Step 13. You see the newly created Hysteria2 node under the existing **Xray 分流** node. Click on the **测试** to the Hysteria2 node to do **Test** ping to the Hysteria2 server.
 
-Step 14. Select the 1st tab **基本设置** to **Basic Setting** Menu
+Step 14. Select the 1st tab **基本设置** to go back to the **Basic Setting** Menu
 
-Step 15. Chhange the **节点** Node selection from the default **Xray 分流** node to the newly created **Hysteria2** node.
+Step 15. Change the **节点** Node selection from the default **Xray 分流** node to the newly created **Hysteria2** node.
 
-Step 16. Select the **主开关 Main Switch** check box to start the Hysteria2 proxy connection and select blue **保存并应用** button on the bottom of the page to **Save and Apply** the change.
+Step 16. Select the **主开关 Main Switch** check box to start the Hysteria2 proxy connection when router starts up and select blue **保存并应用** button on the bottom of the page to **Save and Apply** the change.
 
 Step 17. The **Core** status should change from red **未运行** not running to green **运行中** running status.
 
 Step 18. You can test the latency of the Baidu, Google, and Github connections by clicking on the respecting text boxes.
 
 > [!CAUTION]
-> If no connection could be made with Baidu, Google, and Github doing the latency test, you should hav same actual domain name in ** 域名**/Domain Name setting use for the Hysteria2 server instead of the IP address. Use a free subdomain from DuckDNS tie to the public IP address of the server.
+> If no connection could be made with Baidu, Google, and Github doing the latency test, trying having both domain name in ** 域名**/Domain Name and **地址（支持域名)**/IP Adress(Domain Supported) settings be the same. So instead of using an IP address, use a free subdomain from FreeDNS that will tie to the public IP address of the Hysteria2 server.
 
 > [!Note]
-> I haven't test this client setup behind the GFW as I'm setup this up for friend who will be traveling in China in a few months. I will update this once that happens.
+> I haven't test this router setup behind the GFW as I'm setup this up for friend who will be traveling in China in a few months. Only to both a home and cheap VPS servers. I will update this once the travel happens.
 
 
