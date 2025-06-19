@@ -72,7 +72,7 @@ Step 10. Go back to LuCI Admin panel webpage at http://192.168.8.1:8080/cgi-bin/
 
 Step 11. Using the above screenshot, select the gear icon **服务** for **Service**, and then select **PassWall 2**. Then select the 2nd tab **节点列表** for **Node List** and select either of the blue **添加** buttons to **Add To** the Node List.
 
-![Hysteria2 setup](https://github.com/nextrizon/Hysteria2/blob/main/Hy2node1.png)
+![Hysteria2 setup](https://github.com/nextrizon/Hysteria2/blob/main/Hy2node.png)
 
 Step 12. Using the above screenshot, I will update the Hysteria2 node configuration using the settings from the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) for the server install.
 > [!NOTE]
