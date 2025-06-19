@@ -1,18 +1,20 @@
 ## Setting up a Hysteria2 client node on GL-iNet GL-MT3000(Beryl AX) router
 ___
 
->[!NOTE]
->You can use the [following guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) on setting up a Hysteria2 server and/or client on a Windows PC
+> [!NOTE]
+> I use the [following guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) on setting up a Hysteria2 server and a client on a desktop PC to test the server is working.
 
->[!IMPORTANT]
+> [!WARNING]
 > I'm not responsible if this guide brick your router. If it does happen, you can try using [this guide](https://docs.gl-inet.com/router/en/3/tutorials/debrick/) to restore the firmware for your GL-iNet router.
 
-This guide should also work for GL-iNet MT2500A/MT6000 and any OpenWrt router using an ARM Cortex-A53 processor with at least 256MB of flash storage.
+> [!IMPORTANT]
+> This guide should also work for GL-iNet MT2500A/MT6000 and any OpenWrt router using an ARM Cortex-A53 processor with at least 256MB of flash storage. The router will have use up of total ~220MB of flash storage after setting up the Hysteria2 client node.
 
 ### Prerequisites
 ___
-1. Update to the latest firmware for your OpenWrt router. The GL-iNet version of the OpenWrt still stuck version 21 as of writing this guide.
-2. Make sure to install LuCI interface in the **Advanced Settings** of the GL-iNet Admin Panel webpage for GL-iNet router or use the `opkg` command after ssh into the router and using `opkg update` command after step 2.
+1. Make sure you're connected to the router in the same IP address and and able to connect to it e.g. http://192.168.8.1/.
+2. Update to the latest firmware for your OpenWrt router. The GL-iNet version of the OpenWrt still stuck version 21 as of writing this guide.
+3. Make sure to install LuCI interface in the **Advanced Settings** of the GL-iNet Admin Panel webpage for GL-iNet router or use the `opkg` command after sshing into the router and using `opkg update` command after step 2.
 
 ### Installation
 ___
@@ -42,9 +44,9 @@ Step 4. You should see the following Chinese text install menu. Go ahead and pre
 
 ![finish install](https://github.com/nextrizon/Hysteria2/blob/main/install-complete.png)
 
-Press **ENTER** when see above and the **q** to quit out of the script as you don't need to install any other module.
+Press **ENTER** key when seeing above text and then the  **q** key to quit out of the script as you don't need to install any of the other modules.
 
-Step 5. Login into the newly installed LuCI iStoreOS theme from the **Advanced Settings** from the GL-iNet Admin Panel webpage or directly at http://192.168.8.1:8080/cgi-bin/luci/
+Step 5. Login into the newly installed LuCI iStoreOS theme from the **Advanced Settings** from the GL-iNet Admin Panel webpage or directly at http://192.168.8.1:8080
 
 > [!NOTE]
 >All of the text in this LuCI theme is in Chinese, you can enable Chrome browser's auto Google Translate and see the text in your default language.
@@ -57,24 +59,24 @@ As writing of this guide I downloaded the plug-in file e.g., **PassWall2_25.5.7_
 
 ![istore plugin](https://github.com/nextrizon/Hysteria2/blob/main/istore.png)
 
-Step 7. Using the above screenshot, select **iStore** on the left side menu, select **手动安装** for Manual Installation, and then select **选择或拖放文件** to upload the PassWall2 .run file to install the plug-in.
+Step 7. Using the above menu screen, select **iStore** on the left side menu, select **手动安装** for Manual Installation, and then select **选择或拖放文件** to upload the PassWall2 .run file to install the plug-in.
 
-Step 8. It going to take a minute or 2 to install the PassWall2 plug-in, the pop-up screen will have **red** dot will it's being install and **green** dot when it finish. Click **green** to exit out of the install screen.
+Step 8. It going to take a minute or 2 to install the PassWall2 plug-in, the pop-up screen will have **red** dot when the installation process is running and will turn to a **green** dot when it has finished. Click **green** dot to exit out of the install screen.
 
 Step 9. You need go back to the GL.iNet Admin Panel webpage and select **Reboot** icon in the upper right corner.
 
 > [!WARNING]
-> You must reboot the router after installing the PassWall2 plug-in, else the router will not connect to the Hysteria2 server after you create a Hysteria2 node on this router.
+> You must reboot the router after installing the PassWall2 plug-in, else the router might not connect to the Hysteria2 server after you create the Hysteria2 node on this router.
 
-Step 10. Go back to LuCI Admin panel webpage at http://192.168.8.1:8080/cgi-bin/luci/.
+Step 10. Log back into the LuCI Admin panel webpage at http://192.168.8.1:8080 once the router is reboot and connected to in the same IP address range.
 
 ![Hysteria2 setup](https://github.com/nextrizon/Hysteria2/blob/main/Hy2setup.png)
 
-Step 11. Using the above screenshot, select the gear icon **服务** for **Service**, and then select **PassWall 2**. Then select the 2nd tab **节点列表** for **Node List** and select either of the blue **添加** buttons to **Add To** the Node List.
+Step 11. Using the above menu screen, select the gear icon **服务** for **Service**, and then select **PassWall 2**. Then select the 2nd tab **节点列表** for **Node List** and select either of the blue **添加** buttons to **Add To** the Node List.
 
 ![Hysteria2 setup](https://github.com/nextrizon/Hysteria2/blob/main/Hy2node.png)
 
-Step 12. Using the above screenshot, I will update the Hysteria2 node configuration using the settings from the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) for the server install.
+Step 12. Using the above menu screen, I will update the Hysteria2 node configuration using the settings from the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) for the server install.
 > [!NOTE]
 >The easiest way to do it is to **Export Share Link To Clipboard** from the **[Furious](https://github.com/LorenEteval/Furious/releases) client in the **Edit Configuration** menu and then import config by selecting the **导入分享URL**/**Importing Share URL** in Passwall2 node list page, if you did a test connection using the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/).
 
@@ -109,12 +111,12 @@ Step 16. Select the **主开关 Main Switch** check box to start the Hysteria2 p
 
 Step 17. The **Core** status should change from red **未运行** not running to green **运行中** running status.
 
-Step 18. You can test the latency of the Baidu, Google, and Github connections by clicking on the respecting text boxes.
+Step 18. You can test the latency of the Baidu, Google, and Github connections by clicking on the respecting text boxes. Use a "What Is My IP Address" website and if it is showing the IP address of your Hysteria2 server, then Hysteria2 node is working on your router.
 
 > [!CAUTION]
-> If no connection could be made with Baidu, Google, and Github doing the latency test, trying having both domain name in ** 域名**/Domain Name and **地址（支持域名)**/IP Adress(Domain Supported) settings be the same. So instead of using an IP address, use a free subdomain from FreeDNS that will tie to the public IP address of the Hysteria2 server.
+> If no connection could be made with Baidu, Google, and Github doing the latency test, trying having both domain name in **域名**/Domain Name and **地址（支持域名)**/IP Adress(Domain Supported) settings be the same. So instead of using an IP address, use a free subdomain from FreeDNS that will tie to the public IP address of the Hysteria2 server.
 
 > [!Note]
-> I haven't test this router setup behind the GFW as I'm setup this up for friend who will be traveling in China in a few months. Only to both a home and cheap VPS servers. I will update this once the travel happens.
+> I haven't test this router setup behind the GFW as I'm setting this up for a friend who will be traveling to China in a few months. Only tested it on a VPS server. I will update this once the router is behind the GFW.
 
 
