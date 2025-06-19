@@ -95,7 +95,7 @@ Enter for the following boxes:
 |PinSHA256|PinSHA256|Leave it blank, I think it's use when the server isn't using secure ceftificate|
 |最大上行(Mbps)|Maximum Uplink(Mbps)|Leave it blank, unless you want to limite the uplink speed|
 |最大下行(Mbps)|Maximum Downlink(Mbps)|Again blank, unless otherwise|
-|**Just leave the rest of the boxes blank|
+|**Just leave the rest of the boxes blank|||
 
 Select blue **保存并应用** button on the bottom of the page to **Save and Apply** the settings that were entered
 
@@ -115,6 +115,6 @@ Step 18. You can test the latency of the Baidu, Google, and Github connections b
 > If no connection could be made with Baidu, Google, and Github doing the latency test, you should hav same actual domain name in ** 域名**/Domain Name setting use for the Hysteria2 server instead of the IP address. Use a free subdomain from DuckDNS tie to the public IP address of the server.
 
 > [!Note]
-> I have test this client setup behind the GFW as I'm setup this up for friend who will be traveling in China in a few months. I will update this once that happens.
+> I haven't test this client setup behind the GFW as I'm setup this up for friend who will be traveling in China in a few months. I will update this once that happens.
 
 
