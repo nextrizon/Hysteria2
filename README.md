@@ -30,7 +30,7 @@ opkg update
 opkg install luci-app-opkg
 ```
 
-Step 3. Run the following command to download and execute a script to update the OpenWrt's LuCI web interface with the custom iStoreOS theme.
+Step 3. Run the following command to download and execute a script to update the OpenWrt's LuCI Admin Panel with the custom iStoreOS theme.
 
 ```bash
 wget -O gl-inet.sh https://cafe.cpolar.top/wkdaily/gl-inet-onescript/raw/branch/master/gl-inet.sh && chmod +x gl-inet.sh && ./gl-inet.sh
