@@ -14,7 +14,7 @@ ___
 ___
 1. Make sure you're connected to the router in the same IP address and and able to connect to it e.g. http://192.168.8.1/.
 2. Update to the latest firmware for your OpenWrt router. The GL-iNet version of the OpenWrt still stuck version 21 as of writing this guide.
-3. Make sure to install LuCI interface in the **Advanced Settings** of the GL-iNet Admin Panel webpage for GL-iNet router or use the `opkg` command after sshing into the router and using `opkg update` command after step 2.
+3. Make sure to install LuCI interface in the `Advanced Settings` of the GL-iNet Admin Panel webpage for GL-iNet router or use the `opkg` command after sshing into the router and using `opkg update` command after step 2.
 
 ### Installation
 ___
@@ -46,7 +46,7 @@ Step 4. You should see the following Chinese text install menu. Go ahead and pre
 
 Press `ENTER` key when seeing above text and then the `q` key to quit out of the script as you don't need to install any of the other modules.
 
-Step 5. Login into the newly installed LuCI iStoreOS theme from the **Advanced Settings** from the GL-iNet Admin Panel webpage or directly at http://192.168.8.1:8080
+Step 5. Login into the newly installed LuCI iStoreOS theme from the `Advanced Settings` from the GL-iNet Admin Panel webpage or directly at http://192.168.8.1:8080
 
 > [!NOTE]
 > Most of the text in this LuCI theme are in Chinese, you can enable Chrome browser's auto Google Translate and see the text in your default language.
@@ -72,13 +72,13 @@ Step 10. Log back into the LuCI Admin panel webpage at http://192.168.8.1:8080 o
 
 ![Hysteria2 setup](https://github.com/nextrizon/Hysteria2/blob/main/Hy2setup.png)
 
-Step 11. Using the above menu screen, select the gear icon `服务` for **Service**, and then select **PassWall 2**. Then select the 2nd tab `节点列表` for the **Node List** and select either of the blue `添加` buttons to **Add To** the Node List.
+Step 11. Using the above menu screen, select the gear icon `服务` for **Service**, and then select `PassWall 2`. Next select the 2nd tab `节点列表` for the **Node List** and select either of the blue `添加` buttons to **Add To** the Node List.
 
 ![Hysteria2 setup](https://github.com/nextrizon/Hysteria2/blob/main/Hy2node.png)
 
 Step 12. Using the above menu screen to create a Hysteria2 node using the settings from the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) for the Hysteria2 server install.
 > [!NOTE]
->The easiest way to do it is to `Export Share Link To Clipboard` from the **[Furious](https://github.com/LorenEteval/Furious/releases) client in the `Edit Configuration` menu and then import config by selecting the `导入分享URL`/**Importing Share URL** in Passwall2 node list page, if you did a test connection using the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/).
+>The easiest way to do it is to `Export Share Link To Clipboard` from the **[Furious](https://github.com/LorenEteval/Furious/releases)** client in the `Edit Configuration` menu and then import config by selecting the `导入分享URL`/**Importing Share URL** in Passwall2 node list page, if you did a test connection using the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/).
 
 Enter for the following boxes:
 
@@ -107,7 +107,7 @@ Step 14. Select the 1st tab `基本设置` to go back to the **Basic Setting** M
 
 Step 15. Change the `节点` Node selection from the default `Xray 分流` node to the newly created `Hysteria2` node.
 
-Step 16. Select the `主开关 Main Switch` check box to start the Hysteria2 proxy connection when router starts up and select blue `保存并应用` button on the bottom of the page to **Save and Apply** the change.
+Step 16. Select the `主开关` **Main Switch** check box to start the Hysteria2 proxy connection when router starts up and select blue `保存并应用` button on the bottom of the page to **Save and Apply** the change.
 
 Step 17. The **Core** status should change from a red `未运行` not running status to a green `运行中` running status.
 
