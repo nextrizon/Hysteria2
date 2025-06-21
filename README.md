@@ -35,7 +35,7 @@ Step 3. Run the following command to download and execute a script to update the
 ```bash
 wget -O gl-inet.sh https://cafe.cpolar.top/wkdaily/gl-inet-onescript/raw/branch/master/gl-inet.sh && chmod +x gl-inet.sh && ./gl-inet.sh
 ```
-Step 4. You should see the following Chinese text install menu. Go ahead and press **1** and then **ENTER** for `GL.iNet GL-MT3000一键iStoreOS风格化`
+Step 4. You should see the following Chinese text install menu. Go ahead and press `1` and then `ENTER` key for **GL.iNet GL-MT3000一键iStoreOS风格化`** option.
 
 ![install script](https://github.com/nextrizon/Hysteria2/blob/main/gl-inet.png)
 
@@ -44,7 +44,7 @@ Step 4. You should see the following Chinese text install menu. Go ahead and pre
 
 ![finish install](https://github.com/nextrizon/Hysteria2/blob/main/install-complete.png)
 
-Press **ENTER** key when seeing above text and then the  **q** key to quit out of the script as you don't need to install any of the other modules.
+Press `ENTER` key when seeing above text and then the `q` key to quit out of the script as you don't need to install any of the other modules.
 
 Step 5. Login into the newly installed LuCI iStoreOS theme from the **Advanced Settings** from the GL-iNet Admin Panel webpage or directly at http://192.168.8.1:8080
 
@@ -59,7 +59,7 @@ As writing of this guide I downloaded the plug-in file e.g., **PassWall2_25.5.7_
 
 ![istore plugin](https://github.com/nextrizon/Hysteria2/blob/main/istore.png)
 
-Step 7. Using the above menu screen, select **iStore** on the left side menu, select **手动安装** for Manual Installation, and then select **选择或拖放文件** to upload the PassWall2 .run file to install the plug-in.
+Step 7. Using the above menu screen, select `iStore` on the left side menu, select `手动安装` for Manual Installation, and then select `选择或拖放文件` to upload the PassWall2 .run file to install the plug-in.
 
 Step 8. It's going to take a minute or 2 to install the PassWall2 plug-in, the pop-up screen will have **red** dot when the installation process is running and will turn to a **green** dot when it has finished. Click **green** dot to exit out of the install screen.
 
@@ -72,13 +72,13 @@ Step 10. Log back into the LuCI Admin panel webpage at http://192.168.8.1:8080 o
 
 ![Hysteria2 setup](https://github.com/nextrizon/Hysteria2/blob/main/Hy2setup.png)
 
-Step 11. Using the above menu screen, select the gear icon **服务** for **Service**, and then select **PassWall 2**. Then select the 2nd tab **节点列表** for **Node List** and select either of the blue **添加** buttons to **Add To** the Node List.
+Step 11. Using the above menu screen, select the gear icon `服务` for **Service**, and then select **PassWall 2**. Then select the 2nd tab `节点列表` for the **Node List** and select either of the blue `添加` buttons to **Add To** the Node List.
 
 ![Hysteria2 setup](https://github.com/nextrizon/Hysteria2/blob/main/Hy2node.png)
 
 Step 12. Using the above menu screen to create a Hysteria2 node using the settings from the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/) for the Hysteria2 server install.
 > [!NOTE]
->The easiest way to do it is to **Export Share Link To Clipboard** from the **[Furious](https://github.com/LorenEteval/Furious/releases) client in the **Edit Configuration** menu and then import config by selecting the **导入分享URL**/**Importing Share URL** in Passwall2 node list page, if you did a test connection using the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/).
+>The easiest way to do it is to `Export Share Link To Clipboard` from the **[Furious](https://github.com/LorenEteval/Furious/releases) client in the `Edit Configuration` menu and then import config by selecting the `导入分享URL`/**Importing Share URL** in Passwall2 node list page, if you did a test connection using the [above guide](https://cscot.pages.dev/2023/09/13/hysteria2-furious/).
 
 Enter for the following boxes:
 
@@ -99,17 +99,17 @@ Enter for the following boxes:
 |最大下行(Mbps)|Maximum Downlink(Mbps)|Again blank, unless otherwise|
 ### Just leave the rest of the boxes blank
 
-Select blue **保存并应用** button on the bottom of the page to **Save and Apply** the settings that were entered
+Select blue `保存并应用` button on the bottom of the page to **Save and Apply** the settings that were entered
 
-Step 13. You see the newly created Hysteria2 node under the existing **Xray 分流** node. Click on the **测试** next to the Hysteria2 node to do a **Test** ping to the Hysteria2 server.
+Step 13. You see the newly created Hysteria2 node under the existing **Xray 分流** node. Click on the `测试` next to the Hysteria2 node to do a **Test** ping to the Hysteria2 server.
 
-Step 14. Select the 1st tab **基本设置** to go back to the **Basic Setting** Menu
+Step 14. Select the 1st tab `基本设置` to go back to the **Basic Setting** Menu
 
-Step 15. Change the **节点** Node selection from the default **Xray 分流** node to the newly created **Hysteria2** node.
+Step 15. Change the `节点` Node selection from the default `Xray 分流` node to the newly created `Hysteria2` node.
 
-Step 16. Select the **主开关 Main Switch** check box to start the Hysteria2 proxy connection when router starts up and select blue **保存并应用** button on the bottom of the page to **Save and Apply** the change.
+Step 16. Select the `主开关 Main Switch` check box to start the Hysteria2 proxy connection when router starts up and select blue `保存并应用` button on the bottom of the page to **Save and Apply** the change.
 
-Step 17. The **Core** status should change from a red **未运行** not running status to a green **运行中** running status.
+Step 17. The **Core** status should change from a red `未运行` not running status to a green `运行中` running status.
 
 Step 18. You can test the latency of the Baidu, Google, and Github connections by clicking on the respecting text boxes. Use a "What Is My IP Address" website and if it is showing the IP address of your Hysteria2 server.
 
