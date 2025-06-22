@@ -1,4 +1,4 @@
-## Setting up a Hysteria2 client node on GL-iNet GL-MT3000(Beryl AX) router
+## Installing OpenWall2 with Hysteria 2 Node on a OpenWrt Router
 ___
 
 > [!NOTE]
@@ -8,7 +8,7 @@ ___
 > I'm not responsible if this guide brick your router. If it does happen, you can try using [this guide](https://docs.gl-inet.com/router/en/3/tutorials/debrick/) to restore the firmware for your GL-iNet router.
 
 > [!IMPORTANT]
-> This guide should also work for GL-iNet MT2500A/MT6000 and any OpenWrt router using an ARM Cortex-A53 processor with at least 256MB of flash storage. The router will have use up of total ~220MB of flash storage after setting up the Hysteria2 client node.
+> I setup this up on a **GL-iNet MT3000(Beryl AX) Travel WiFi router**. But this guide should also work for GL-iNet MT2500A/MT6000 and any OpenWrt router using an ARM Cortex-A53 processor with at least 256MB of flash storage. The router will have use up of total ~220MB of flash storage after setting up the Hysteria2 client node.
 
 ### Prerequisites
 ___
